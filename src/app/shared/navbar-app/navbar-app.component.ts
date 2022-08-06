@@ -9,6 +9,11 @@ export class NavbarAppComponent implements OnInit {
 
   constructor() { }
 
+  sendData(event: any){
+    
+  }
+
+
   ngOnInit(): void {
   }
 
