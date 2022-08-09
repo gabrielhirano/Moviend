@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-app',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-app.component.sass']
 })
 export class NavbarAppComponent implements OnInit {
+
+
 
   constructor() { }
 
@@ -16,5 +18,17 @@ export class NavbarAppComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  openSearch(): void{
+    
+    const input = document.getElementById("search-input");
+    const custom_style={
+        width: "200px",
+        marginLeft: "-175px",
+        transition: ".4s"
+    }
+    //Object.assign():
+    if(input) Object.assign(input.style,custom_style);
 
+
+  }
 }
