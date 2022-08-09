@@ -11,8 +11,8 @@
         <div class="sencondary-navigation">
             <div class="nav-element">
                 <div class="search-box">
-                    <input type="text" class="search-input" name="search-box" placeholder="Pesquisar..." (keyup)="sendData($event)">
-                    <a class="search-btn">
+                    <input type="text" id="search-input" class="search-input" name="search-box" placeholder="Pesquisar..." (keyup)="sendData($event)">
+                    <a class="search-btn" (click)="openSearch()">
                         <img class="lupa-icon" src="/assets/search.svg" alt="lupa">
                     </a>
                 </div>
